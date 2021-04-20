@@ -97,6 +97,6 @@ dataStoreDelete();
 
 **<ins>NOTE:</ins>**
  
-I am not sure whether ```app.dataStore.delete()``` is an Asynchronous or a Synchronous cloud function. 
+* I am not sure whether ```app.dataStore.delete()``` is an Asynchronous or a Synchronous cloud function. 
  
-Just to be on a safer side, I am __assuming__ that __it is an Asynchronous cloud function__ and thus I am using ```await``` keyword for it.
+* Just to be on a safer side, I am __assuming__ that __it is an Asynchronous cloud function__ and thus I am using ```await``` keyword for it.
