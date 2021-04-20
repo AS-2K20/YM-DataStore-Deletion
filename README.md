@@ -94,3 +94,9 @@ dataStoreDelete();
 2. Using a For Loop, We are iterating the stored variable and getting the **"_id"** of each record of the given table.
  
 3. We are running the above For Loop for all the records in the given table and we are using ```app.dataStore.delete()``` to delete all the records in the given table by iterating over the **"_id"** property of each record in the given table.
+
+*<ins>NOTE:</ins>*
+ 
+I am not sure whether ```app.dataStore.delete()``` is an Asynchronous or a Synchronous cloud function. 
+ 
+Just to be on a safer side, I am assuming that it is an asynchronous cloud function and thus I am using ```node js await``` keyword for it.
