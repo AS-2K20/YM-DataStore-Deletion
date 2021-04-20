@@ -99,4 +99,4 @@ dataStoreDelete();
  
 I am not sure whether ```app.dataStore.delete()``` is an Asynchronous or a Synchronous cloud function. 
  
-Just to be on a safer side, I am assuming that it is an asynchronous cloud function and thus I am using ```node js await``` keyword for it.
+Just to be on a safer side, I am assuming that it is an asynchronous cloud function and thus I am using ```await``` keyword for it.
