@@ -8,17 +8,17 @@ We can find the "**_id**" key in the following ways :
 
 <h3>1. Using UI:</h3>
 
-After Logging into your account in https://app.yellowmessenger.com/, Go to your YM bot. 
+* After Logging into your account in https://app.yellowmessenger.com/, Go to your YM bot. 
 
-Click on __Database__ and then click on __Developer Tools__.
+* Click on __Database__ and then click on __Developer Tools__.
 
 <img width="1435" alt="Screenshot 2021-04-20 at 6 42 48 PM" src="https://user-images.githubusercontent.com/66553883/115437130-6e21cd80-a229-11eb-9958-bf3f3e13271e.png">
 
-Click on the required Table and then click on __Run Query__ button.
+* Click on the required Table and then click on __Run Query__ button.
 
 <img width="1440" alt="Screenshot 2021-04-20 at 6 49 31 PM" src="https://user-images.githubusercontent.com/66553883/115437265-990c2180-a229-11eb-8787-44c95cf30d04.png">
 
-Scroll down and you can see the "**_id**" of each record in your selected table.
+* Scroll down and you can see the "**_id**" of each record in your selected table.
 
 <h3>2. Using Code:</h3>
 	
