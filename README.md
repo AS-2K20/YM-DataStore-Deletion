@@ -55,8 +55,7 @@ await app.dataStore.delete({ table: table_name, "_id": id });
 **<ins>EXAMPLE:</ins>**
 
 ```node js
-		await app.dataStore.delete({ table: "to_be_deleted", 
-"_id": "607ebac8e644a142a75f4fa4"});
+await app.dataStore.delete({ table: "to_be_deleted","_id": "607ebac8e644a142a75f4fa4"});
 ```
 	
 <h2>Deleting Multiple Records:</h2>
@@ -65,21 +64,21 @@ await app.dataStore.delete({ table: table_name, "_id": id });
 
 **<ins>EXAMPLE:</ins>**
 ```node js		
-		async function dataStoreDelete(){
-   let dbSearch = await app.dataStore.search({
-       table: "to_be_deleted",
-       body: {
-           "query": {
-               "match_all": {}
-           }
-       }
-   });
-   app.log(dbSearch,"THIS IS DBSEARCH !");
-   for(let columnId of dbSearch.hits.hits){
-       await app.dataStore.delete({ table: "to_be_deleted", "_id": columnId["_id"] });
-   }
-   		}
-		dataStoreDelete();
+	async function dataStoreDelete(){
+		let dbSearch = await app.dataStore.search({
+			table: "to_be_deleted",
+			body: {
+				"query": {
+					"match_all": {}
+				}
+			}
+		});
+		app.log(dbSearch,"THIS IS DBSEARCH !");
+		for(let columnId of dbSearch.hits.hits){
+			await app.dataStore.delete({ table: "to_be_deleted", "_id": columnId["_id"] });
+		}
+	}
+	dataStoreDelete();
 ``` 
 	
  
