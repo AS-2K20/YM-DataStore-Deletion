@@ -2,9 +2,9 @@
 
 > Using ```app.dataStore.delete()```, We can DELETE ONLY THE RECORDS OF A TABLE FOR THE GIVEN "_id".
 
-To delete a record ( row ) from the table in the database, we need to know the "_id" Key of the Particular Record in the table.
+To delete a record ( row ) from the table in the database, we need to know the **"_id"** Key of the Particular Record in the table.
 
-We can find the "**_id**" key in the following ways : 
+We can find the **"_id"** key in the following ways : 
 
 <h3>1. Using UI:</h3>
 
@@ -89,8 +89,8 @@ dataStoreDelete();
  
 **<ins>BRIEF EXPLANATION:</ins>**
  
-1. Using app.dataStore.search()with a "match_all" query, we are getting all the records from the required table and storing it in a variable.
+1. Using ```app.dataStore.search()``` with a "__match_all__" query, we are getting all the records from the required table and storing it in a variable.
 
-2. Using a For Loop, We are iterating the stored variable and getting the "_id" of each record of the given table.
+2. Using a For Loop, We are iterating the stored variable and getting the **"_id"** of each record of the given table.
  
-3. We are running the above For Loop for all the records in the given table and we are using app.dataStore.delete()to delete all the records in the given table by iterating over the "_id" property of each record in the given table.
+3. We are running the above For Loop for all the records in the given table and we are using ```app.dataStore.delete()``` to delete all the records in the given table by iterating over the **"_id"** property of each record in the given table.
