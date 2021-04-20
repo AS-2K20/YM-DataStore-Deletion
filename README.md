@@ -6,7 +6,7 @@ To delete a record ( row ) from the table in the database, we need to know the "
 
 We can find the "**_id**" key in the following ways : 
 
-1. *__Using UI:__*
+<h3>1. Using UI:</h3>
 
 After Logging into your account in https://app.yellowmessenger.com/, Go to your YM bot. 
 
@@ -20,7 +20,7 @@ Click on the required Table and then click on __Run Query__ button.
 
 Scroll down and you can see the "**_id**" of each record in your selected table.
 
-2. *__Using Code:__*
+<h3>2. Using Code:</h3>
 	
 	Using __match all__ query in ```await app.dataStore.search()```, We can get the same output as above.
 
@@ -42,7 +42,7 @@ let dbSearch = await app.dataStore.search({
 
 <img width="1440" alt="Screenshot 2021-04-20 at 8 03 13 PM" src="https://user-images.githubusercontent.com/66553883/115440448-5ba99300-a22d-11eb-81ee-68c19bda97e3.png">
 	
-__Deleting 1 Record:__
+<h2>Deleting 1 Record:</h2>
 	
 Using ```app.dataStore.delete()```, We can delete 1 record from the required table.
 
@@ -59,7 +59,7 @@ await app.dataStore.delete({ table: table_name, "_id": id });
 "_id": "607ebac8e644a142a75f4fa4"});
 ```
 	
-__Deleting Multiple Records:__
+<h2>Deleting Multiple Records:</h2>
 
 ```app.dataStore.delete()``` can delete ONLY 1 record. So if we want to delete multiple records, we have to run this multiple times.
 
