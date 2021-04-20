@@ -64,21 +64,21 @@ await app.dataStore.delete({ table: "to_be_deleted","_id": "607ebac8e644a142a75f
 
 **<ins>EXAMPLE:</ins>**
 ```node js		
-	async function dataStoreDelete(){
-		let dbSearch = await app.dataStore.search({
-			table: "to_be_deleted",
-			body: {
-				"query": {
-					"match_all": {}
-				}
+async function dataStoreDelete(){
+	let dbSearch = await app.dataStore.search({
+		table: "to_be_deleted",
+		body: {
+			"query": {
+				"match_all": {}
 			}
-		});
-		app.log(dbSearch,"THIS IS DBSEARCH !");
-		for(let columnId of dbSearch.hits.hits){
-			await app.dataStore.delete({ table: "to_be_deleted", "_id": columnId["_id"] });
 		}
+	});
+	app.log(dbSearch,"THIS IS DBSEARCH !");
+	for(let columnId of dbSearch.hits.hits){
+		await app.dataStore.delete({ table: "to_be_deleted", "_id": columnId["_id"] });
 	}
-	dataStoreDelete();
+}
+dataStoreDelete();
 ``` 
 	
  
