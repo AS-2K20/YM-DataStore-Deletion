@@ -29,15 +29,18 @@ Using __match all__ query in ```await app.dataStore.search()```, We can get the 
 **<ins>EXAMPLE:</ins>**
 
 ```node js
-let dbSearch = await app.dataStore.search({
-       table: "to_be_deleted",
-       body: {
-           "query": {
-               "match_all": {}
-           }
-       }
-   });
-app.log(dbSearch,"THIS IS DBSEARCH !");
+async function dataStoreDelete(){
+	let dbSearch = await app.dataStore.search({
+	       table: "to_be_deleted",
+	       body: {
+		   "query": {
+		       "match_all": {}
+		   }
+	       }
+	   });
+	app.log(dbSearch,"THIS IS DBSEARCH !");
+}
+dataStoreDelete();
 ``` 
 	
 **<ins>OUTPUT:</ins>**
