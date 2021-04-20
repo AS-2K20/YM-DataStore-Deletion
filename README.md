@@ -20,6 +20,8 @@ We can find the "**_id**" key in the following ways :
 
 * Scroll down and you can see the "**_id**" of each record in your selected table.
 
+<img width="1440" alt="Screenshot 2021-04-20 at 8 03 13 PM" src="https://user-images.githubusercontent.com/66553883/115440448-5ba99300-a22d-11eb-81ee-68c19bda97e3.png">
+
 <h3>2. Using Code:</h3>
 	
 Using __match all__ query in ```await app.dataStore.search()```, We can get the same output as above.
@@ -40,7 +42,7 @@ let dbSearch = await app.dataStore.search({
 	
 **<ins>OUTPUT:</ins>**
 
-<img width="1440" alt="Screenshot 2021-04-20 at 8 03 13 PM" src="https://user-images.githubusercontent.com/66553883/115440448-5ba99300-a22d-11eb-81ee-68c19bda97e3.png">
+<img width="935" alt="Screenshot 2021-04-20 at 8 24 59 PM" src="https://user-images.githubusercontent.com/66553883/115444248-f310e500-a231-11eb-97ea-6380d334da3e.png">
 	
 <h2>Deleting 1 Record:</h2>
 	
