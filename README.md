@@ -57,7 +57,10 @@ await app.dataStore.delete({ table: table_name, "_id": id });
 **<ins>EXAMPLE:</ins>**
 
 ```node js
-await app.dataStore.delete({ table: "to_be_deleted","_id": "607ebac8e644a142a75f4fa4"});
+async function dataStoreDelete(){
+	await app.dataStore.delete({ table: "to_be_deleted","_id": "607ebac8e644a142a75f4fa4"});
+}
+dataStoreDelete();
 ```
 	
 <h2>Deleting Multiple Records:</h2>
