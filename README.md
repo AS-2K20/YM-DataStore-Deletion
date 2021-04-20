@@ -22,7 +22,7 @@ Scroll down and you can see the "**_id**" of each record in your selected table.
 
 <h3>2. Using Code:</h3>
 	
-	Using __match all__ query in ```await app.dataStore.search()```, We can get the same output as above.
+Using __match all__ query in ```await app.dataStore.search()```, We can get the same output as above.
 
 **<ins>EXAMPLE:</ins>**
 
@@ -44,7 +44,7 @@ let dbSearch = await app.dataStore.search({
 	
 <h2>Deleting 1 Record:</h2>
 	
-Using ```app.dataStore.delete()```, We can delete 1 record from the required table.
+Using ```app.dataStore.delete()``` , We can delete 1 record from the required table.
 
 **<ins>SYNTAX:</ins>**
 
