@@ -95,7 +95,7 @@ dataStoreDelete();
  
 3. We are running the above For Loop for all the records in the given table and we are using ```app.dataStore.delete()``` to delete all the records in the given table by iterating over the **"_id"** property of each record in the given table.
 
-*<ins>NOTE:</ins>*
+**<ins>NOTE:</ins>**
  
 I am not sure whether ```app.dataStore.delete()``` is an Asynchronous or a Synchronous cloud function. 
  
