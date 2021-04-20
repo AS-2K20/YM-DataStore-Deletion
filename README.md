@@ -37,7 +37,7 @@ let dbSearch = await app.dataStore.search({
            }
        }
    });
-   app.log(dbSearch,"THIS IS DBSEARCH !");
+app.log(dbSearch,"THIS IS DBSEARCH !");
 ``` 
 	
 **<ins>OUTPUT:</ins>**
